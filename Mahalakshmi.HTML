@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRI MAHALAKSHMI MILL</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Set your background color here */
+        }
+
+        header {
+                    background: url('pic2.jpg') center/cover no-repeat; /* Replace 'your-logo-image.jpg' with your logo image path */
+            height: 200px; /* Set the height of the header */
+            position: relative;
+            text-align: center;
+            color: #fff; /* Set text color for the header */
+            padding-top: 50px; /* Adjust the padding as needed */
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333; /* Set your navigation background color */
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555; /* Set your hover background color */
+        }
+
+        section {
+            padding: 30px;
+            display: none;
+        }
+
+        section.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1> </h1>
+    </header>
+
+    <nav>
+        <a href="#" onclick="showContent('aboutus')">About Us</a>
+        <a href="#" onclick="showContent('MISSION')">Mission</a>
+        <a href="#" onclick="showContent('VISION')">Vision</a>
+        <a href="#" onclick="showContent('gallery')">Gallery</a>
+      
+        <a href="#" onclick="showContent('contacts us')">Contacts us</a>
+    </nav>
+
+    <section id="aboutus" class="active">
+        <h2>About Us</h2>
+        <h4><font size="4" color="black">
+        <ul>
+        <li>The name of the company is SRI MAHALAKSHMI FIBRE MILL.It was established in 1999.<br><br>
+        <li>We are reliable manfacturers,supplier and of an extensive range of products.<br><br>
+        <li>The company offers you a wide range of products in the FIBRE products and PEAT BRICK manufacturing.<br><br> 
+        <li>Our motto believing in the motto of customer satisfaction to demand the finest production of products.<br><br>
+
+    </section>
+
+    <section id="contacts us">
+        <h2>Contacts us</h2>
+        <dl>
+        <dt><b>COMPANY NAME:</b><dd>SRI MAHALASKHMI FIBRE MILL<br><br>
+        <dt><b>ADDRESS:</b><dd>2/29B KALLAKULAM NATHAKDU PATTAKARANPALAYAM (PO) PERUNDURAI,Erode,Tamil Nadu.<br><br>
+        <dt><b>PHONE:</b><dd>+91 9789551299<br><br>
+        <dt><b>EMAIL:</b><dd>sedhuraj@gmail.com
+        </dl>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <img src="COCB.jpg" height=200 width=200> &emsp; <img src="PEAT.jpg" height=200 width=200> &emsp; <img src="COCR.jpg" height=200 width=200> &emsp;<img src="cocos.jpg" height=200 width=200> &emsp;
+    </section>
+
+ 
+ 
+<section id="MISSION">
+        <h2>Mission</h2>
+        <h4><font size="4" color="black">
+        <ul>
+        <li>Harnessing coconut resources for eco-conscious packaging and construction.<br><br>
+        <li>Empowering local communities through fair trade coconut bale initiatives.<br><br>
+        <li>Pioneering research for continual improvement in coconut bale applications.
+</section>
+
+<section id="VISION">
+        <h2>Vision</h2>
+        <h4><font size="4" color="black">
+        <ul>
+        <li>Sustainable coconut bale production enhancing global agricultural practices.<br><br>
+        <li>Leading in eco-friendly coconut bale solutions for diverse industries.<br><br>
+        <li>Innovating for a greener future through premium coconut bale products.
+</section>
+
+    <script>
+        function showContent(sectionId) {
+            // Hide all sections
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function (section) {
+                section.classList.remove('active');
+            });
+
+            // Show the selected section
+            var selectedSection = document.getElementById(sectionId);
+            selectedSection.classList.add('active');
+        }
+    </script>
+
+</body>
+
+</html>
